@@ -1,0 +1,57 @@
+.layout {
+    position: relative;
+    height: 100vh;
+    &.fold {
+        .logo {
+            img {
+              width: 28px;
+              margin: 6px 7px;
+            }
+          }
+    }
+
+    .logo {
+        height: 40px;
+        cursor: pointer;
+        overflow: hidden;
+        text-align: center;
+        margin: 12px 0;
+
+        img {
+          width: 40px;
+          margin-right: 8px;
+          vertical-align: middle;
+        }
+  
+        span {
+          font-size: 16px;
+          text-transform: uppercase;
+          display: inline-block;
+        }
+    }
+
+    .switchtheme {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        height: 48px;
+        background-color: #494949;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px 0 24px;
+        overflow: hidden;
+        z-index: 1000;
+  
+        span {
+          white-space: nowrap;
+          overflow: hidden;
+        }
+    }
+
+    .mainContent {
+      background: #fff;
+      margin: 0 24px;
+      min-height: e("calc(100vh - 190px)");
+    }
+}
